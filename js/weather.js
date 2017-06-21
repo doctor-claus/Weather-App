@@ -12,7 +12,7 @@ function showPosition(position) {
 $(document).ready(function(){
 	$("#city").autocomplete({
 		source: function (request, response){
-			$.getJSON("https://gd.geobytes.com/AutoCompleteCity?callback=?&q="+request.term,
+			$.getJSON("http://gd.geobytes.com/AutoCompleteCity?callback=?&q="+request.term,
 				function (data) {
 			 		response(data);
 				}
